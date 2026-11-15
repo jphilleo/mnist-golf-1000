@@ -1,0 +1,19 @@
+{
+  "created": "2026-11-15T15:39:31.119489+00:00",
+  "artifact_sha256": "924fc897db1f4faa0e29b2cde0b1d87b280575fc64e40818156dda36395f0b86",
+  "compressed_bytes": 993,
+  "source_bytes": 1571,
+  "source_sha256": "475787480f577ec1f750fa28cd093f331c088568dbb0ff5f2cd9ba35ccea1f02",
+  "evaluator_sha256": "905334d6085d5281fa00e4080092d47da906ab7d76a52877eb7f47469ad89e27",
+  "freeze_before_official_test_acquisition": true,
+  "official_test_correct": 9925,
+  "official_test_examples": 10000,
+  "official_test_accuracy": 0.9925,
+  "development_accuracy": 0.9915,
+  "official_test_attempts": 1,
+  "runtime_excluded": [
+    "Python",
+    "PyTorch"
+  ],
+  "official_result_sha256": "bf1870b2e575df5e76d47526d79f52df70b27e219d3a80632e956be3629c425d"
+}

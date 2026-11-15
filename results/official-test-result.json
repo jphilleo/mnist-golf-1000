@@ -1,0 +1,52 @@
+{
+  "completed": "2026-11-15T15:39:59.712655+00:00",
+  "status": "completed",
+  "split": "official MNIST test",
+  "artifact_sha256": "924fc897db1f4faa0e29b2cde0b1d87b280575fc64e40818156dda36395f0b86",
+  "compressed_bytes": 993,
+  "correct": 9925,
+  "examples": 10000,
+  "errors": 75,
+  "accuracy": 0.9925,
+  "wilson_95_interval": [
+    0.9906096594933204,
+    0.9940121021115632
+  ],
+  "meets_99_percent": true,
+  "evaluation_seconds": 16.447626167,
+  "milliseconds_per_image": 1.6447626166999998,
+  "batch_size": 256,
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 1,
+  "test_passes": 1,
+  "test_examples_used_for_warmup": 0,
+  "data": {
+    "t10k-images-idx3-ubyte.gz": {
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz",
+      "compressed_bytes": 1648877,
+      "md5": "9fb629c4189551a2d022fa330f9573f3",
+      "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6",
+      "decompressed_sha256": "0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7"
+    },
+    "t10k-labels-idx1-ubyte.gz": {
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz",
+      "compressed_bytes": 4542,
+      "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+      "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6",
+      "decompressed_sha256": "ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2"
+    }
+  },
+  "runtime": {
+    "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+    "torch": "2.6.0",
+    "numpy": "2.0.2",
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch_config": "PyTorch built with:\n  - GCC 4.2\n  - C++ Version: 201703\n  - clang 15.0.0\n  - OpenMP 201811\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: NO AVX\n  - Build settings: BLAS_INFO=accelerate, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CXX_COMPILER=/Applications/Xcode_15.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_PYTORCH_QNNPACK -DAT_BUILD_ARM_VEC256_WITH_SLEEF -DUSE_XNNPACK -DUSE_PYTORCH_METAL_EXPORT -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DUSE_COREML_DELEGATE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=braced-scalar-init -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wvla-extension -Wsuggest-override -Wnewline-eof -Winconsistent-missing-override -Winconsistent-missing-destructor-override -Wno-pass-failed -Wno-error=old-style-cast -Wconstant-conversion -Wno-missing-braces -Qunused-arguments -fcolor-diagnostics -faligned-new -Wno-unused-but-set-variable -fno-math-errno -fno-trapping-math -Werror=format -DUSE_MPS -Wno-unused-private-field -Wno-missing-braces, LAPACK_INFO=accelerate, TORCH_VERSION=2.6.0, USE_CUDA=OFF, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EIGEN_FOR_BLAS=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=OFF, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n"
+  },
+  "freeze_sha256": "d22bf8dae5e1b45847081d8162bcd486a289dd464bb4a8d30381129a170eb39b",
+  "claim_sha256": "7c9257324ba24dfcbdee3a666c9fa3674ad51d31175761410c26931c6302b36c",
+  "evaluator_sha256": "905334d6085d5281fa00e4080092d47da906ab7d76a52877eb7f47469ad89e27",
+  "interpretation": "One final aggregate evaluation of an artifact selected before test acquisition. Wilson interval is descriptive and does not prove a population-accuracy threshold or world record. Test set is exposed for any subsequent tuning."
+}

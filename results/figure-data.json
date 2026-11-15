@@ -1,0 +1,103 @@
+{
+  "development_milestones": [
+    {
+      "label": "8-bit baseline",
+      "bytes": 18811,
+      "correct": 9933,
+      "examples": 10000,
+      "accuracy": 0.9933,
+      "artifact_sha256": "3287b523545f38f7262576a85478bad8de0dc86a188be8c26e54126c10541449",
+      "source_report": "BASELINE.json",
+      "source_report_sha256": "db662dea68d25d1fecab2bf8c27c0fd62f3ce727983140abed62720d6fc626ac",
+      "source_json_path": [
+        "reference_artifacts",
+        1
+      ]
+    },
+    {
+      "label": "3-bit quantization-aware training",
+      "bytes": 7628,
+      "correct": 9940,
+      "examples": 10000,
+      "accuracy": 0.994,
+      "artifact_sha256": "d99730fcff938824b38c698f13db4222b9cb5c79922f8b084181505a26cbab44",
+      "source_report": "runs/20261114T175007Z-2106858c/report.json",
+      "source_report_sha256": "7cd32daff2938c2c425c56f85e2447305844fb8d79f187e83e07282dc7d4012a",
+      "source_json_path": [
+        "results",
+        0
+      ]
+    },
+    {
+      "label": "Teacher-guided ternary model",
+      "bytes": 4770,
+      "correct": 9928,
+      "examples": 10000,
+      "accuracy": 0.9928,
+      "artifact_sha256": "a2fcf624b2263bdad04a34e7638330c0e7c90eecec3739ceac2388916ceef1c0",
+      "source_report": "runs/20261114T181239Z-bca2135e/report.json",
+      "source_report_sha256": "dfa2209e4b39d581be3fedc55f4b9ecd6666f4098f16b3f295b2f4637a72636f",
+      "source_json_path": [
+        "results",
+        0
+      ]
+    },
+    {
+      "label": "Early shared-filter model",
+      "bytes": 953,
+      "correct": 9809,
+      "examples": 10000,
+      "accuracy": 0.9809,
+      "artifact_sha256": "28c34d149cca5873871cbbe18016d19b01c579a2ca6514fa4d91a164d8c14e77",
+      "source_report": "studies/block-007/results.json",
+      "source_report_sha256": "ca0db8d1758523303886a21db1ec4a620f3c46b553e0fe68ac8bae449846cd4e",
+      "source_json_path": [
+        10,
+        "result"
+      ]
+    },
+    {
+      "label": "Final model",
+      "bytes": 993,
+      "correct": 9915,
+      "examples": 10000,
+      "accuracy": 0.9915,
+      "artifact_sha256": "924fc897db1f4faa0e29b2cde0b1d87b280575fc64e40818156dda36395f0b86",
+      "source_report": "studies/block-185/results.json",
+      "source_report_sha256": "2fb1f8d2e8c1331fe7a5233bfcc0135c950f1db35d0364fff5c43ccafc38364d",
+      "source_json_path": [
+        "result"
+      ]
+    }
+  ],
+  "scope": "Selected measured milestones on the same adaptively reused development split; not an exhaustive frontier or a causal attribution of improvements.",
+  "encoding_variants": [
+    {
+      "label": "Original encoding",
+      "bytes": 1009
+    },
+    {
+      "label": "Shorter source spelling",
+      "bytes": 1004
+    },
+    {
+      "label": "Spelling + shared class offsets",
+      "bytes": 1000
+    },
+    {
+      "label": "Spelling + channel order",
+      "bytes": 999
+    },
+    {
+      "label": "Spelling + offsets + channel order",
+      "bytes": 997
+    },
+    {
+      "label": "Above + tensor storage order",
+      "bytes": 993
+    }
+  ],
+  "encoding_scope": "Alternative encodings of the fine-left checkpoint. The 999-byte row is a separate branch; not an additive waterfall. The final encoding matched the original on all 50,000 training predictions.",
+  "encoding_source": "studies/block-185/results.json",
+  "related_work_file": "results/related-work-points.json"
+}

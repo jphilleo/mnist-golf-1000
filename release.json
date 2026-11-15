@@ -1,0 +1,21 @@
+{
+  "repository_name": "mnist-golf-1000",
+  "title": "Handwritten Digit Recognition in 993 Bytes",
+  "description": "A 993-byte MNIST neural network with 99.25% official test accuracy. Compressed model data and inference code included; requires Python and PyTorch.",
+  "topics": [
+    "mnist",
+    "model-compression",
+    "quantization",
+    "pytorch",
+    "neural-network",
+    "handwritten-digit-recognition",
+    "knowledge-distillation",
+    "ai-assisted-research",
+    "sub-kilobyte",
+    "mnist-golf-1000",
+    "mnist-golf-99"
+  ],
+  "publication_status": "Published",
+  "model_name": "Philleo-993",
+  "release_date": "2026-11-15"
+}

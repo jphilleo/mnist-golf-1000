@@ -1,0 +1,175 @@
+{
+  "checked": "2026-11-15",
+  "x_axis": "Reported compressed size, bytes, linear",
+  "y_axis": "Reported official MNIST test accuracy, percent",
+  "scope": "Selected primary-source results, not an exhaustive benchmark. External results were not independently rerun. Markers distinguish custom inference code plus model data from model/weight payload only; all runtime and packaging contracts are source-specific.",
+  "unit_convention": "Exact byte or bit figures retained. Rounded kB/KB figures plotted at 1000 bytes per kB; these positions are approximate, not exact file measurements.",
+  "rows": [
+    {
+      "id": "ours",
+      "name": "MNIST Golf",
+      "bytes_for_plot": 993,
+      "test_accuracy_percent": 99.25,
+      "scope": "code_and_model",
+      "source": "results/official-test-result.json",
+      "reported_size": "993 B",
+      "note": "One frozen artifact, one official-test evaluation; Python/PyTorch excluded."
+    },
+    {
+      "id": "miracle-small",
+      "name": "MIRACLE",
+      "bytes_for_plot": 1520,
+      "test_accuracy_percent": 99.04,
+      "scope": "model_only",
+      "source": "https://arxiv.org/pdf/1810.00440",
+      "reported_size": "1.52 kB",
+      "note": "Table 1: 0.96% test error; rounded kB size, plotted using 1 kB = 1000 bytes."
+    },
+    {
+      "id": "miracle-accurate",
+      "name": "MIRACLE",
+      "bytes_for_plot": 3030,
+      "test_accuracy_percent": 99.31,
+      "scope": "model_only",
+      "source": "https://arxiv.org/pdf/1810.00440",
+      "reported_size": "3.03 kB",
+      "note": "Table 1: 0.69% test error; rounded kB size, plotted using 1 kB = 1000 bytes."
+    },
+    {
+      "id": "scaling",
+      "name": "Scaling Discovery",
+      "bytes_for_plot": 1957,
+      "test_accuracy_percent": 99.41,
+      "scope": "code_and_model",
+      "source": "https://arxiv.org/html/2609.21032v1",
+      "reported_size": "1,957 B",
+      "note": "Sections 3.3.2 and A.5; gzipped tar submission including code; runtime excluded."
+    },
+    {
+      "id": "tiny-repro",
+      "name": "tiny_MNIST reproduction",
+      "bytes_for_plot": 2461,
+      "test_accuracy_percent": 99.4,
+      "scope": "code_and_model",
+      "source": "https://arxiv.org/html/2609.21032v1",
+      "reported_size": "2,461 B",
+      "note": "Reproduction by the Scaling Discovery authors, not an upstream artifact-size claim; same tar/gzip contract."
+    },
+    {
+      "id": "kilobyte-1024",
+      "name": "Kilobyte Models",
+      "bytes_for_plot": 524,
+      "test_accuracy_percent": 96.41,
+      "scope": "model_only",
+      "source": "https://arxiv.org/html/2608.00860v1",
+      "reported_size": "524 B",
+      "note": "Tables 2\u20133: CNN2, SLVT, d=1024, int4 QAT. Seed/latent/scale payload; inference and regeneration code excluded. These are the three 4-bit SLVT CNN2 budgets, not every configuration in the paper.",
+      "plot_label": "Seed + learned code",
+      "paper_title": "Kilobyte Models: Neural Networks as a Seed and a Quantized Latent",
+      "author": "Sahil Rajesh Dhayalkar"
+    },
+    {
+      "id": "kilobyte-2048",
+      "name": "Kilobyte Models",
+      "bytes_for_plot": 1036,
+      "test_accuracy_percent": 97.94,
+      "scope": "model_only",
+      "source": "https://arxiv.org/html/2608.00860v1",
+      "reported_size": "1,036 B",
+      "note": "Tables 2\u20133: CNN2, SLVT, d=2048, int4 QAT. Seed/latent/scale payload; inference and regeneration code excluded. These are the three 4-bit SLVT CNN2 budgets, not every configuration in the paper.",
+      "plot_label": "Seed + learned code",
+      "paper_title": "Kilobyte Models: Neural Networks as a Seed and a Quantized Latent",
+      "author": "Sahil Rajesh Dhayalkar"
+    },
+    {
+      "id": "kilobyte-4096",
+      "name": "Kilobyte Models",
+      "bytes_for_plot": 2060,
+      "test_accuracy_percent": 98.6,
+      "scope": "model_only",
+      "source": "https://arxiv.org/html/2608.00860v1",
+      "reported_size": "2,060 B",
+      "note": "Tables 2\u20133: CNN2, SLVT, d=4096, int4 QAT. Seed/latent/scale payload; inference and regeneration code excluded. These are the three 4-bit SLVT CNN2 budgets, not every configuration in the paper.",
+      "plot_label": "Seed + learned code",
+      "paper_title": "Kilobyte Models: Neural Networks as a Seed and a Quantized Latent",
+      "author": "Sahil Rajesh Dhayalkar"
+    },
+    {
+      "id": "attiny",
+      "name": "ATtiny85 RNN",
+      "bytes_for_plot": 472,
+      "test_accuracy_percent": 95.1,
+      "scope": "model_only",
+      "source": "https://www.reddit.com/r/computervision/comments/1rk4va4/computer_vision_in_512_bytes/",
+      "reported_size": "472 B",
+      "note": "Author reports 472 int8 parameters and 95.10% test accuracy. Firmware/library excluded. Code: https://github.com/GiorgosXou/ATTiny85-MNIST-RNN-EEPROM"
+    },
+    {
+      "id": "bitnet",
+      "name": "BitNetPDK",
+      "bytes_for_plot": 424,
+      "test_accuracy_percent": 90.07,
+      "scope": "model_only",
+      "source": "https://cpldcpu.github.io/2024/05/02/machine-learning-mnist-inference-on-the-3-cent-microcontroller/",
+      "reported_size": "3,392 bits",
+      "note": "Weight payload: 3392/8 = 424 bytes. Inputs downsampled to 8\u00d78; firmware excluded."
+    },
+    {
+      "id": "deep",
+      "name": "Deep Compression",
+      "bytes_for_plot": 44000,
+      "test_accuracy_percent": 99.26,
+      "scope": "model_only",
+      "source": "https://arxiv.org/pdf/1510.00149",
+      "reported_size": "44 KB",
+      "note": "Original paper Table 1: 0.74% test error. Use this primary result, rather than the rounded 0.8% error quoted in MIRACLE. Rounded KB plotted using 1000 bytes."
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Rohrer leaderboard",
+      "reason": "1,398 parameters, 99% category; no verified deployed-byte size."
+    },
+    {
+      "name": "Grimov minimal model",
+      "reason": "1,936 parameters, 99.1%; no verified deployed-byte size."
+    },
+    {
+      "name": "Weightless",
+      "reason": "Reported byte sizes concern selected layers; no verified complete-model size for this comparison."
+    },
+    {
+      "name": "PAC-Bayes subspace compression",
+      "reason": "0.38 KB reported, but a matching measured test accuracy for that encoding has not been established here; generalization bounds are not test accuracy."
+    },
+    {
+      "name": "Bayesian Compression",
+      "reason": "Primary paper gives compression ratios; 2.3 kB comes from a later comparison. Omitted pending consistent primary-source absolute-size accounting."
+    }
+  ],
+  "figure_axes": {
+    "layout": "single graph",
+    "x_scale": "linear",
+    "x_limits_bytes": [
+      0,
+      3000
+    ],
+    "y_scale": "linear",
+    "y_limits_percent": [
+      96,
+      100
+    ],
+    "filter": "Accuracy >96%, bytes <=3000",
+    "prior_frontier": {
+      "ids": [
+        "kilobyte-1024",
+        "kilobyte-2048",
+        "miracle-small",
+        "scaling"
+      ],
+      "excludes": "ours",
+      "definition": "Non-dominated by size (minimize) and accuracy (maximize) among plotted prior results",
+      "line": "Straight segments, visual guide only; source accounting differs"
+    }
+  }
+}
